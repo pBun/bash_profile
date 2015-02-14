@@ -1,0 +1,9 @@
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+if [ -f $(brew --prefix)/Cellar/git/2.0.0/etc/bash_completion.d ]; then
+  . $(brew --prefix)/Cellar/git/2.0.0/etc/bash_completion.d
+fi
+
+source $HOME/.bash/vendor_scripts/git_flow_completion

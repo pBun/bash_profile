@@ -1,0 +1,38 @@
+# Edit this
+alias bash_conf="subl ~/.bash"
+
+# Show/Hide Hidden Files
+alias shf="defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder"
+alias hhf="defaults write com.apple.finder AppleShowAllFiles FALSE;killall Finder"
+
+# HOSTS file
+alias hosts="sudo subl /private/etc/hosts"
+
+# DNS cache flushing
+alias flush_dns='sudo dscacheutil -flushcache'
+
+# Reload the bash_profile
+alias reload='. $HOME/.bash_profile && echo "Reloaded ~/.bash_profile"'
+
+# Apache
+alias apache_start='sudo apachectl start'
+alias apache_stop='sudo apachectl stop'
+alias apache_restart='sudo apachectl restart'
+alias apache_error_log='subl /var/log/apache2/error_log'
+alias apache_conf="sudo subl /etc/apache2/httpd.conf"
+alias apache_user_conf="sudo subl /etc/apache2/users/dboersma.conf"
+alias apache_vhost="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
+
+# PHP
+alias php_ini="sudo subl /etc/php.ini"
+
+# MySQL
+alias mysql_start='mysql.server start'
+alias mysql_stop='mysql.server stop'
+alias mysql_stop='mysql.server restart'
+
+# MongoDB
+alias mongo_start='mongod run --config /usr/local/Cellar/mongodb/2.0.2-x86_64/mongod.conf'
+
+# Memcached
+#alias memcached='/usr/local/bin/memcached'
